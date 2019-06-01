@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ReactCrop from 'react-image-crop';
-import { Modal } from 'antd';
+import { Modal, Button } from 'antd';
 import './index.scss';
 
 // 兼容 IE
@@ -227,6 +227,7 @@ class ImgCrop extends Component {
               keepSelection
             />
           )}
+          <Button type="primary">改变比例</Button>
         </Modal>
       </>
     );
